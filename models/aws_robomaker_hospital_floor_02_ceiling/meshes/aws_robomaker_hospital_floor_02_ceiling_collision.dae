@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>Cinema 4D 21.207 COLLADA Exporter</authoring_tool>
+        </contributor>
+        <created>2020-06-04T14:16:28Z</created>
+        <modified>2020-06-04T14:16:28Z</modified>
+        <unit meter="0.01" name="centimeter"/>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_geometries>
+        <geometry id="ID3">
+            <mesh>
+                <source id="ID4">
+                    <float_array id="ID5" count="12">-3500 300 1250 2099.04 300 1250 -3500 300 -1250 2099.04 300 -1250</float_array>
+                    <technique_common>
+                        <accessor count="4" source="#ID5" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID6">
+                    <float_array id="ID7" count="3">0 -1 -0</float_array>
+                    <technique_common>
+                        <accessor count="1" source="#ID7" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID8">
+                    <float_array id="ID9" count="8">0.554594 0.525639 0.914516 0.538893 0.0854841 0.538893 0.445406 0.525639</float_array>
+                    <technique_common>
+                        <accessor count="4" source="#ID9" stride="2">
+                            <param name="S" type="float"/>
+                            <param name="T" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="ID10">
+                    <input semantic="POSITION" source="#ID4"/>
+                </vertices>
+                <polylist count="1" material="">
+                    <input offset="0" semantic="VERTEX" source="#ID10"/>
+                    <input offset="1" semantic="NORMAL" source="#ID6"/>
+                    <input offset="2" semantic="TEXCOORD" source="#ID8" set="0"/>
+                    <vcount>4</vcount>
+                    <p>2 0 3 3 0 2 1 0 1 0 0 0</p>
+                </polylist>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="ID1">
+            <node id="ID2" name="aws_robomaker_hospital_floor_02_ceiling_collision">
+                <translate sid="translate">-6.96592e-22 -1.13762e-05 1.13762e-05</translate>
+                <rotate sid="rotateY">0 1 0 90</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 -270</rotate>
+                <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#ID3"/>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ID1"/>
+    </scene>
+</COLLADA>
