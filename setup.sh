@@ -10,5 +10,5 @@ python3 fuel_utility.py download \
 -m TrolleyBox2 -m TrolleyBox1 -m Toilet -m Shower -m PatientFSit \
 -m Nurse -m MaleVisitorOnPhone -m MalePatientBed -m KitchenSink \
 -m "Male visitor" \
--d fuel_models \
+-d models \
 --verbose
