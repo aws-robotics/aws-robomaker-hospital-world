@@ -18,7 +18,7 @@
 
 We also reference the following models from https://app.ignitionrobotics.org/fuel/models:
 
-*MopCart3, AdjTable, BedTable, FemaleVisitorSit, VisitorKidSit, ElderMalePatient, OfficeChairBlack, ElderLadyPatient, MaleVisitorSit, FemaleVisitor, BedsideTable, SurgicalTrolleyMed, AnesthesiaMachine, VendingMachine, TrolleyBox2, TrolleyBox1, Toilet, Shower, PatientFSit, Nurse, MaleVisitorOnPhone, MalePatientBed, KitchenSink, Male visitor, HOSPI, WhiteChipChair, WalkingCane, Walker, VisitorChair, TrolleyBedPatient, SurgicalTrolleyGuards, SurgicalTrolley, StorageRackCovered, StorageRackCoverOpen, StorageRack, SmallTrolley, RollingWalker, PotatoChipChair, PatientWheelChair, ParkingTrolleyMin, ParkingTrolleyMax, OrangeDoors, OpScrubs, MetalCabinetYellow, MetalCabinet, ManualFireAlarmButton, MainTable, InstrumentCart2, InstrumentCart1, HospitalPillow, Handrail, GarbagePileV2, GarbagePileV1, FreezerCondenser, FreezerComp, Extinguisher cabinet, ExitSign, ElectronicsRecycling, ColBumper, CGMClassic, BedsideTable2, TrolleyBed*
+*CGMClassic, StorageRack VisitorChair InstrumentCart1 OpScrubs PatientWheelChair WhiteChipChair TrolleyBed SurgicalTrolley PotatoChipChair VisitorKidSit FemaleVisitorSit AdjTable MopCart3, MaleVisitorSit, Drawer, OfficeChairBlack, ElderLadyPatient, ElderMalePatient, InstrumentCart2, MetalCabinet, BedTable, BedsideTable, AnesthesiaMachine, TrolleyBedPatient, Shower, SurgicalTrolleyMed, StorageRackCovered, KitchenSink, Toilet, VendingMachine, ParkingTrolleyMin, PatientFSit, MaleVisitorOnPhone, FemaleVisitor, MalePatientBed, StorageRackCoverOpen, ParkingTrolleyMax*
 
 # Include the world from another package
 
