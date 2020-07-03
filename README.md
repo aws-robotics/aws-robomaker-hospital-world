@@ -2,7 +2,7 @@
 
 **Visit the [AWS RoboMaker website](https://aws.amazon.com/robomaker/) to learn more about building intelligent robotic applications with Amazon Web Services.**
 
-![Model: Buckets](docs/images/hospital_world.png)
+![Model: Buckets](docs/images/hospital_world.jpg)
 
 ## 3D Models included in this Gazebo World
 
