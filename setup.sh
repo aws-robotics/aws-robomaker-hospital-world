@@ -1,14 +1,16 @@
 #!/bin/bash
 pip install -r requirements.txt
 python3 fuel_utility.py download \
--q Hospital \
--m MopCart3 -m AdjTable -m BedTable -m FemaleVisitorSit -m VisitorKidSit \
--m ElderMalePatient -m OfficeChairBlack \
--m ElderLadyPatient -m MaleVisitorSit -m FemaleVisitor \
--m BedsideTable -m SurgicalTrolleyMed \
--m AnesthesiaMachine -m VendingMachine \
--m TrolleyBox2 -m TrolleyBox1 -m Toilet -m Shower -m PatientFSit \
--m Nurse -m MaleVisitorOnPhone -m MalePatientBed -m KitchenSink \
--m "Male visitor" \
--d models \
---verbose
+-m CGMClassic -m StorageRack -m VisitorChair \
+-m InstrumentCart1 -m OpScrubs -m PatientWheelChair \
+-m WhiteChipChair -m TrolleyBed -m SurgicalTrolley \
+-m PotatoChipChair -m VisitorKidSit -m FemaleVisitorSit \
+-m AdjTable -m MopCart3 -m MaleVisitorSit -m Drawer \
+-m OfficeChairBlack -m ElderLadyPatient -m ElderMalePatient \
+-m InstrumentCart2 -m MetalCabinet -m BedTable -m BedsideTable \
+-m AnesthesiaMachine -m TrolleyBedPatient -m Shower \
+-m SurgicalTrolleyMed -m StorageRackCovered -m KitchenSink \
+-m Toilet -m VendingMachine -m ParkingTrolleyMin -m PatientFSit \
+-m MaleVisitorOnPhone -m FemaleVisitor -m MalePatientBed \
+-m StorageRackCoverOpen -m ParkingTrolleyMax \
+-d fuel_models --verbose

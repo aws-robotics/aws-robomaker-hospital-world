@@ -1,5 +1,5 @@
 <launch>
-  <arg name="gui" default="true"/>
   <include file="$(find aws_robomaker_hospital_world)/launch/hospital.launch">
+    <arg name="gui" default="true"/>
   </include>
 </launch>
