@@ -39,7 +39,7 @@ class FuelModelUtility:
 
     def appendModelSearchResults(self, page, category):
         response = requests.get(FUEL_URI+"?q="+category+"&page="+str(page))
-        modelArray = json.loads(response.content)
+        modelArray = json.loads(response.text)
         self.models.extend(modelArray)
         page += 1
         if (len(modelArray)>=20):
@@ -47,7 +47,7 @@ class FuelModelUtility:
 
     def appendSingleModel(self, model_name):
         response = requests.get(FUEL_URI+"/"+model_name)
-        model = json.loads(response.content)
+        model = json.loads(response.text)
         self.models.append(model)
     
     def getByCategory(self, category):
