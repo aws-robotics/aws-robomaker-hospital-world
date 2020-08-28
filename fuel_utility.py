@@ -77,7 +77,7 @@ class FuelModelUtility:
                 logging.info("Model %s already downloaded.", model['name'])
             else:
                 logging.info("Downloading %s", model['name'])
-                url = "https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/"+model['name']+"/1/"+model['name']+".zip"
+                url = "https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/"+model['name']+"/2/"+model['name']+".zip"
                 response = requests.get(url, stream=True)
                 z = zipfile.ZipFile(io.BytesIO(response.content))
                 z.extractall(directory+"/"+model['name'])
