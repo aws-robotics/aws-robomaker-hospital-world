@@ -56,6 +56,9 @@ class FuelModelUtility:
     def getByModel(self, model_name):
         self.appendSingleModel(model_name)
     
+    def getModelUrl(self, mode_name)
+        return FUEL_URI+model_name+"/2/"+model_name+".zip" 
+
     def createDatabaseFile(self, directory):
         database = ET.Element('database')
         name = ET.SubElement(database, 'name')
@@ -77,7 +80,7 @@ class FuelModelUtility:
                 logging.info("Model %s already downloaded.", model['name'])
             else:
                 logging.info("Downloading %s", model['name'])
-                url = "https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/"+model['name']+"/2/"+model['name']+".zip"
+                url = self.getModelUrl(model['name'])
                 response = requests.get(url, stream=True)
                 z = zipfile.ZipFile(io.BytesIO(response.content))
                 z.extractall(directory+"/"+model['name'])
