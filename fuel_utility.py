@@ -57,7 +57,7 @@ class FuelModelUtility:
         self.appendSingleModel(model_name)
     
     def getModelUrl(self, mode_name)
-        return FUEL_URI+model_name+"/2/"+model_name+".zip" 
+        return FUEL_URI + model_name + "/2/" + model_name + ".zip" 
 
     def createDatabaseFile(self, directory):
         database = ET.Element('database')
