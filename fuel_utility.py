@@ -25,6 +25,7 @@ import xml.dom.minidom
 import os.path
 
 FUEL_URI="https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models"
+MODEL_VERSION = "2"
 WAIT_BETWEEN_DOWNLOADS_IN_SECONDS=5
 
 class FuelModelUtility: 
@@ -57,7 +58,7 @@ class FuelModelUtility:
         self.appendSingleModel(model_name)
     
     def getModelUrl(self, mode_name)
-        return FUEL_URI + model_name + "/2/" + model_name + ".zip" 
+        return FUEL_URI + model_name + "/" + MODEL_VERSION + "/" + model_name + ".zip" 
 
     def createDatabaseFile(self, directory):
         database = ET.Element('database')

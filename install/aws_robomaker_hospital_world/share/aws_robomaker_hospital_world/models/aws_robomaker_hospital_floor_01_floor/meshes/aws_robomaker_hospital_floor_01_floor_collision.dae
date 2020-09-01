@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>Cinema 4D 21.207 COLLADA Exporter</authoring_tool>
+        </contributor>
+        <created>2020-06-04T14:10:05Z</created>
+        <modified>2020-06-04T14:10:05Z</modified>
+        <unit meter="0.01" name="centimeter"/>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_geometries>
+        <geometry id="ID3">
+            <mesh>
+                <source id="ID4">
+                    <float_array id="ID5" count="96">-3500 -2.27524e-05 1250 2099.77 -2.27524e-05 1250 -3500 -2.27524e-05 -1250 2099.77 -2.27524e-05 -1250 1700.17 -2.27524e-05 -1250 1700.17 -2.27524e-05 1250 1900.5 -2.27524e-05 -1250 1900.5 -2.27524e-05 1250 1700.17 -2.27524e-05 -600.047 1700.17 -2.27524e-05 599.944 1900.5 -2.27524e-05 -600.047 1900.5 -2.27524e-05 599.944 2099.77 -2.27524e-05 -261.12 2099.77 -2.27524e-05 261.797 1900.5 -2.27524e-05 -261.12 1900.5 -2.27524e-05 261.797 1900.5 -2.27524e-05 -300 1900.5 -2.27524e-05 300 1700.17 -2.27524e-05 -300 1700.17 -2.27524e-05 300 1951.53 17.5474 -293.864 1740.39 17.5474 294.331 1951.53 17.5474 294.219 1740.39 17.5474 -293.977 1740.39 9 294.331 1740.39 9 -293.977 1720.38 9 294.331 1720.38 9 -293.977 1720.38 4.10338e-13 294.331 1720.38 4.10338e-13 -293.977 1700.17 4.12115e-13 294.331 1700.17 4.12115e-13 -293.977</float_array>
+                    <technique_common>
+                        <accessor count="32" source="#ID5" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID6">
+                    <float_array id="ID7" count="12">0 1 0 -1 -0 -0 1.77547e-16 1 -0 8.78877e-17 1 -0</float_array>
+                    <technique_common>
+                        <accessor count="4" source="#ID7" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID8">
+                    <float_array id="ID9" count="64">0.554594 0.5 0.445406 0.5 0.1009 0.5 0.8991 0.5 0.0486736 0.5 0.0249175 0.5 0.0277972 0.5 0.0539989 0.5 0.0925937 0.5 0.0854596 0.5 0.0196909 0.5 0.0217311 0.5 0.980259 0.5 0.91454 0.5 0.907406 0.5 0.978213 0.5 0.975083 0.5 0.951334 0.5 0.94601 0.5 0.972203 0.5 0.976185 0.50283 0.973336 0.503164 1.02663 0.503164 1.02379 0.50283 0.973336 0.501623 1.02663 0.501623 0.973032 0.501641 1.02694 0.501641 0.973032 0.5 1.02694 0.5 0.972718 0.5 1.02725 0.5</float_array>
+                    <technique_common>
+                        <accessor count="32" source="#ID9" stride="2">
+                            <param name="S" type="float"/>
+                            <param name="T" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="ID10">
+                    <input semantic="POSITION" source="#ID4"/>
+                </vertices>
+                <polylist count="10" material="">
+                    <input offset="0" semantic="VERTEX" source="#ID10"/>
+                    <input offset="1" semantic="NORMAL" source="#ID6"/>
+                    <input offset="2" semantic="TEXCOORD" source="#ID8" set="0"/>
+                    <vcount>4 4 4 4 4 4 4 4 4 4</vcount>
+                    <p>5 0 3 4 0 2 2 0 1 0 0 0 8 0 7 18 0 6 16 0 5 10 0 4 14 0 11 12 0 10 3 0 9 6 0 8 15 0 15 7 0 14 1 0 13 13 0 12 19 0 19 9 0 18 11 0 17 17 0 16 20 0 23 23 0 22 21 0 21 22 0 20 23 1 22 25 1 25 24 1 24 21 1 21 25 2 25 27 2 27 26 2 26 24 2 24 27 1 27 29 1 29 28 1 28 26 1 26 29 3 29 31 3 31 30 3 30 28 3 28</p>
+                </polylist>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="ID1">
+            <node id="ID2" name="aws_robomaker_hospital_floor_01_floor_collision">
+                <translate sid="translate">0 0 -0</translate>
+                <rotate sid="rotateY">0 1 0 90</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 -270</rotate>
+                <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#ID3"/>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ID1"/>
+    </scene>
+</COLLADA>

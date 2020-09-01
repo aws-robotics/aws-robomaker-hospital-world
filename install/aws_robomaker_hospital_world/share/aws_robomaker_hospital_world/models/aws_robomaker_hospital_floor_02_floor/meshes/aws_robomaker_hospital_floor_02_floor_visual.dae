@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>Cinema 4D 21.207 COLLADA Exporter</authoring_tool>
+        </contributor>
+        <created>2020-06-04T14:15:34Z</created>
+        <modified>2020-06-04T14:15:34Z</modified>
+        <unit meter="0.01" name="centimeter"/>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="ID3">
+            <init_from>aws_robomaker_hospital_floor_02_floor.png</init_from>
+        </image>
+    </library_images>
+    <library_effects>
+        <effect id="ID2">
+            <profile_COMMON>
+                <newparam sid="ID4">
+                    <surface type="2D">
+                        <init_from>ID3</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="ID5">
+                    <sampler2D>
+                        <source>ID4</source>
+                    </sampler2D>
+                </newparam>
+                <technique sid="COMMON">
+                    <blinn>
+                        <emission>
+                               <color> 0.30000 0.30000 0.30000 1</color>
+                        </emission>
+                        <ambient>
+                               <color>1.0000 1.0000 1.0000 1</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="ID5" texcoord="UVSET0"/>
+                        </diffuse>
+                    </blinn>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_materials>
+        <material id="ID1" name="aws_robomaker_hospital_floor_02_floor_visual">
+            <instance_effect url="#ID2"/>
+        </material>
+    </library_materials>
+    <library_geometries>
+        <geometry id="ID8">
+            <mesh>
+                <source id="ID9">
+                    <float_array id="ID10" count="96">-3500 -1.13762e-05 1250 1900.5 -1.13762e-05 599.944 -3500 -1.13762e-05 -1250 1900.5 -1.13762e-05 -600.047 1700.17 -1.13762e-05 -1250 1700.17 -1.13762e-05 1250 2099.77 -1.13762e-05 -600 2099.77 -1.13762e-05 600 1700.17 -1.13762e-05 -600.047 1700.17 -1.13762e-05 599.944 2099.77 -1.13762e-05 -261.12 2099.77 -1.13762e-05 261.797 1900.5 -1.13762e-05 -261.12 1900.5 -1.13762e-05 261.797 1900.5 -1.13762e-05 -1250 1900.5 -1.13762e-05 1250 1900.5 -1.13762e-05 -300.397 1700.17 -1.13762e-05 -300.397 1900.5 -1.13762e-05 299.756 1700.17 -1.13762e-05 299.756 1951.53 17.5474 -293.864 1740.39 17.5474 294.331 1951.53 17.5474 294.219 1740.39 17.5474 -293.977 1740.39 9 294.331 1740.39 9 -293.977 1720.38 9 294.331 1720.38 9 -293.977 1720.38 4.10338e-13 294.331 1720.38 4.10338e-13 -293.977 1700.17 4.12115e-13 294.331 1700.17 4.12115e-13 -293.977</float_array>
+                    <technique_common>
+                        <accessor count="32" source="#ID10" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID11">
+                    <float_array id="ID12" count="9">0 1 -0 -1 0 -0 8.78877e-17 1 -0</float_array>
+                    <technique_common>
+                        <accessor count="3" source="#ID12" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="ID13">
+                    <float_array id="ID14" count="96">0.00700136 0.340663 0.00700136 0.990403 0.992999 0.990403 0.992999 0.340663 0.0449862 0.32147 0.0449862 0.243592 0.00700136 0.243592 0.00700136 0.32147 0.0967719 0.152537 0.0967719 0.0644637 0.0589889 0.0644637 0.0589889 0.152537 0.148558 0.32147 0.148558 0.233572 0.110775 0.233572 0.110775 0.32147 0.610645 0.400452 0.73085 0.400266 0.730333 0.340913 0.611399 0.341103 0.610713 0.400035 0.729392 0.400035 0.730159 0.34124 0.611481 0.34124 0.0449862 0.0876147 0.0449862 0.00959682 0.00700136 0.00959682 0.00700136 0.0876147 0.980117 0.602581 0.933957 0.602428 0.933598 0.731049 0.979757 0.731154 0.916239 0.602378 0.914371 0.602373 0.914011 0.730995 0.91588 0.731 0.92606 0.602406 0.921685 0.602393 0.921326 0.731015 0.9257 0.731027 0.919946 0.602388 0.917978 0.602383 0.917619 0.731005 0.919586 0.73101 0.932218 0.602423 0.927799 0.60241 0.92744 0.731032 0.931858 0.731044</float_array>
+                    <technique_common>
+                        <accessor count="48" source="#ID14" stride="2">
+                            <param name="S" type="float"/>
+                            <param name="T" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="ID15">
+                    <input semantic="POSITION" source="#ID9"/>
+                </vertices>
+                <polylist count="12" material="Material1">
+                    <input offset="0" semantic="VERTEX" source="#ID15"/>
+                    <input offset="1" semantic="NORMAL" source="#ID11"/>
+                    <input offset="2" semantic="TEXCOORD" source="#ID13" set="0"/>
+                    <vcount>4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+                    <p>5 0 3 4 0 2 2 0 1 0 0 0 8 0 7 17 0 6 16 0 5 3 0 4 3 0 11 12 0 10 10 0 9 6 0 8 13 0 15 1 0 14 7 0 13 11 0 12 3 0 19 14 0 18 4 0 17 8 0 16 9 0 23 5 0 22 15 0 21 1 0 20 19 0 27 9 0 26 1 0 25 18 0 24 20 0 31 23 0 30 21 0 29 22 0 28 23 1 35 25 1 34 24 1 33 21 1 32 25 0 39 27 0 38 26 0 37 24 0 36 27 1 43 29 1 42 28 1 41 26 1 40 29 2 47 31 2 46 30 2 45 28 2 44</p>
+                </polylist>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="ID6">
+            <node id="ID7" name="aws_robomaker_hospital_floor_02_floor_visual">
+                <translate sid="translate">0 0 -0</translate>
+                <rotate sid="rotateY">0 1 0 90</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 -270</rotate>
+                <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#ID8">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Material1" target="#ID1">
+                                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD" input_set="0"/>
+                            </instance_material>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ID6"/>
+    </scene>
+</COLLADA>

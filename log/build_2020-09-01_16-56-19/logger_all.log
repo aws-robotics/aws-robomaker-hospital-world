@@ -1,0 +1,103 @@
+[1.039s] DEBUG:colcon:Command line arguments: ['/home/ANT.AMAZON.COM/ojasjosh/.local/bin/colcon', 'build']
+[1.039s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff15c6acdd8>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff15c6acdd8>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff15bf722e8>)
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.106s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.138s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.catkin' and name 'aws_robomaker_hospital_world'
+[1.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_args' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_target' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_clean_cache' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_clean_first' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'cmake_force_configure' from command line to 'False'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'ament_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'catkin_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'aws_robomaker_hospital_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.200s] DEBUG:colcon.colcon_core.verb:Building package 'aws_robomaker_hospital_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world', 'merge_install': False, 'path': '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world', 'symlink_install': False, 'test_result_base': None}
+[1.204s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.235s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world' with build type 'catkin'
+[1.235s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world'
+[1.256s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.269s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.271s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[1.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world': /usr/bin/cmake /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world
+[7.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world' returned '0': /usr/bin/cmake /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world
+[7.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world -- -j8 -l8
+[7.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world' returned '0': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world -- -j8 -l8
+[7.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world --target tests -- -j8 -l8
+[7.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world' returned '0': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world --target tests -- -j8 -l8
+[7.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world --target install -- -j8 -l8
+[8.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('aws_robomaker_hospital_world', 'ros_package_path')
+[8.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world' returned '0': /usr/bin/cmake --build /home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/build/aws_robomaker_hospital_world --target install -- -j8 -l8
+[8.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/ros_package_path.ps1'
+[8.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/ros_package_path.dsv'
+[8.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/ros_package_path.sh'
+[8.150s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/lib/python2.7/dist-packages'
+[8.150s] Level 1:colcon.colcon_core.shell:create_environment_hook('aws_robomaker_hospital_world', 'pkg_config_path')
+[8.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path.ps1'
+[8.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path.dsv'
+[8.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path.sh'
+[8.170s] Level 1:colcon.colcon_core.shell:create_environment_hook('aws_robomaker_hospital_world', 'pkg_config_path_multiarch')
+[8.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path_multiarch.ps1'
+[8.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path_multiarch.dsv'
+[8.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config_path_multiarch.sh'
+[8.206s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aws_robomaker_hospital_world)
+[8.229s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world' for CMake module files
+[8.230s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world' for CMake config files
+[8.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('aws_robomaker_hospital_world', 'cmake_prefix_path')
+[8.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/cmake_prefix_path.ps1'
+[8.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/cmake_prefix_path.dsv'
+[8.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/cmake_prefix_path.sh'
+[8.248s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/lib'
+[8.249s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/bin'
+[8.249s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/lib/pkgconfig/aws_robomaker_hospital_world.pc'
+[8.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('aws_robomaker_hospital_world', 'pkg_config')
+[8.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config.ps1'
+[8.265s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config.dsv'
+[8.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/hook/pkg_config.sh'
+[8.266s] Level 1:colcon.colcon_core.environment:checking '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/lib/python3.6/site-packages'
+[8.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/package.ps1'
+[8.285s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/package.dsv'
+[8.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/package.sh'
+[8.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/package.bash'
+[8.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/package.zsh'
+[8.290s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world/share/colcon-core/packages/aws_robomaker_hospital_world)
+[8.292s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.294s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.294s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.317s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.321s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/local_setup.ps1'
+[8.342s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/_local_setup_util_ps1.py'
+[8.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/setup.ps1'
+[8.364s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/local_setup.sh'
+[8.365s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/_local_setup_util_sh.py'
+[8.367s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/setup.sh'
+[8.397s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/local_setup.bash'
+[8.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/setup.bash'
+[8.418s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/local_setup.zsh'
+[8.419s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/setup.zsh'

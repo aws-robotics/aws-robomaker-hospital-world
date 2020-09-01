@@ -1,0 +1,8 @@
+prefix=/home/ANT.AMAZON.COM/ojasjosh/aws-robomaker-hospital-world/install/aws_robomaker_hospital_world
+
+Name: aws_robomaker_hospital_world
+Description: Description of aws_robomaker_hospital_world
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
