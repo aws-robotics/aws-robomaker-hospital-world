@@ -25,7 +25,6 @@ import xml.dom.minidom
 import os.path
 
 FUEL_URI="https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models"
-MODEL_VERSION = "2"
 WAIT_BETWEEN_DOWNLOADS_IN_SECONDS=5
 
 class FuelModelUtility: 
@@ -57,8 +56,8 @@ class FuelModelUtility:
     def getByModel(self, model_name):
         self.appendSingleModel(model_name)
     
-    def getModelUrl(self, mode_name)
-        return FUEL_URI + model_name + "/" + MODEL_VERSION + "/" + model_name + ".zip" 
+    def getModelUrl(self, model_name, model_version):
+        return "/".join([FUEL_URI, model_name, model_version, model_name + ".zip"]) 
 
     def createDatabaseFile(self, directory):
         database = ET.Element('database')
@@ -81,10 +80,17 @@ class FuelModelUtility:
                 logging.info("Model %s already downloaded.", model['name'])
             else:
                 logging.info("Downloading %s", model['name'])
-                url = self.getModelUrl(model['name'])
+                url = self.getModelUrl(model['name'], "2")
                 response = requests.get(url, stream=True)
-                z = zipfile.ZipFile(io.BytesIO(response.content))
-                z.extractall(directory+"/"+model['name'])
+                try:
+                    z = zipfile.ZipFile(io.BytesIO(response.content))
+                    z.extractall(directory+"/"+model['name'])
+                except zipfile.BadZipFile:
+                    url = self.getModelUrl(model['name'], "1")
+                    response = requests.get(url, stream=True)
+                    z = zipfile.ZipFile(io.BytesIO(response.content))
+                    z.extractall(directory+"/"+model['name'])
+
                 time.sleep(WAIT_BETWEEN_DOWNLOADS_IN_SECONDS)
                 logging.info("Sleeping for %i second(s) between file downloads.", WAIT_BETWEEN_DOWNLOADS_IN_SECONDS)
 
