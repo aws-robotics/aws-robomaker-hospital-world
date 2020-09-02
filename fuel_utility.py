@@ -25,6 +25,8 @@ import xml.dom.minidom
 import os.path
 
 FUEL_URI="https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models"
+MODEL_VERSION_1 = "1"
+MODEL_VERSION_2 = "2"
 WAIT_BETWEEN_DOWNLOADS_IN_SECONDS=5
 
 class FuelModelUtility: 
@@ -80,13 +82,13 @@ class FuelModelUtility:
                 logging.info("Model %s already downloaded.", model['name'])
             else:
                 logging.info("Downloading %s", model['name'])
-                url = self.getModelUrl(model['name'], "2")
+                url = self.getModelUrl(model['name'], MODEL_VERSION_2)
                 response = requests.get(url, stream=True)
                 try:
                     z = zipfile.ZipFile(io.BytesIO(response.content))
                     z.extractall(directory+"/"+model['name'])
                 except zipfile.BadZipFile:
-                    url = self.getModelUrl(model['name'], "1")
+                    url = self.getModelUrl(model['name'], MODEL_VERSION_1)
                     response = requests.get(url, stream=True)
                     z = zipfile.ZipFile(io.BytesIO(response.content))
                     z.extractall(directory+"/"+model['name'])
