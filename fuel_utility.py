@@ -96,7 +96,7 @@ class FuelModelUtility:
             else:
                 logging.info('Downloading %s', model['name'])
                 if ('version' in model):
-                    model_version = model['version']
+                    model_version = str(model['version'])
                 else:
                     model_version = "1"
                 url = '/'.join([FUEL_URI,
