@@ -46,15 +46,20 @@ class FuelModelUtility:
             self.appendModelSearchResults(page, category)
 
     def appendSingleModel(self, model_info):
+        
         if ('=' in model_info):
             model_name, model_version = model_info.split('=')
         else:
             model_name = model_info
-            model_version = "1"
+            model_version = None
+
         url = '/'.join([FUEL_URI, model_name])
         response = requests.get(url)
         model = json.loads(response.text)
-        model['version'] = model_version
+
+        if (model_version):
+            model['version'] = model_version
+
         self.models.append(model)
 
     def getByCategory(self, category):
