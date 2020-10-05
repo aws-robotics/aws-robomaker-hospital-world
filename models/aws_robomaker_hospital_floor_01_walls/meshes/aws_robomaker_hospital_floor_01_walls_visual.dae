@@ -51,10 +51,10 @@
                 <technique sid="COMMON">
                     <blinn>
                         						<emission>
-							<color>0.30000 0.30000 0.30000 1</color>
+							<color>0.20000 0.20000 0.20000 1</color>
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.5 0.5 0.5 1</color>
 						</ambient> 
                         <diffuse>
                             <texture texture="ID5" texcoord="UVSET0"/>
@@ -81,7 +81,7 @@
 							<color>0.30000 0.30000 0.30000 1</color>
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID10" texcoord="UVSET0"/>
@@ -108,7 +108,7 @@
 							<color>0.30000 0.30000 0.30000 1</color>
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID15" texcoord="UVSET0"/>
@@ -135,7 +135,7 @@
 							<color>0.30000 0.30000 0.30000 1</color>
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID20" texcoord="UVSET0"/>
@@ -163,7 +163,7 @@
 
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID25" texcoord="UVSET0"/>
@@ -191,7 +191,7 @@
 
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID30" texcoord="UVSET0"/>
@@ -219,7 +219,7 @@
 
 						</emission>
 						<ambient>
-							<color>1.000000 1.00000 1.00000 1</color>
+							<color>0.600000 0.60000 0.60000 1</color>
 						</ambient>
                         <diffuse>
                             <texture texture="ID35" texcoord="UVSET0"/>
