@@ -121,15 +121,15 @@
             </include>
             <pose>11.1179 -14.6493 0 0 0 -1.5656</pose>
         </model>
-        <model name="VisitorChair_1">
+        <model name="Chair_1">
             <include>
-                <uri>model://VisitorChair</uri>
+                <uri>model://Chair</uri>
             </include>
             <pose>-1.0052 -0.786961 0 0 -0 0</pose>
         </model>
-        <model name="VisitorChair_2">
+        <model name="Chair_2">
             <include>
-                <uri>model://VisitorChair</uri>
+                <uri>model://Chair</uri>
             </include>
             <pose>0.899471 -0.744049 0 0 -0 0</pose>
         </model>
@@ -139,15 +139,15 @@
             </include>
             <pose>-11.6115 -12.2426 0 0 -0 0</pose>
         </model>
-        <model name="OpScrubs_1">
+        <model name="Scrubs_1">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>-9.61916 -12.5112 0 0 -0 0</pose>
         </model>
-        <model name="OpScrubs_2">
+        <model name="Scrubs_2">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>0.054597 4.05849 0 0 -0 3.12413</pose>
         </model>
@@ -157,9 +157,9 @@
             </include>
             <pose>-5.46091 1.23577 0 0 -0 0</pose>
         </model>
-        <model name="OpScrubs_3">
+        <model name="Scrubs_3">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>-5.38513 1.82526 0 0 -0 0</pose>
         </model>
@@ -601,9 +601,9 @@
             </include>
             <pose>1.55325 -19.2199 -1e-06 0 -2e-06 0.007695</pose>
         </model>
-        <model name="OpScrubs_4">
+        <model name="Scrubs_4">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>-0.93616 -18.2252 0 0 0 -3.12479</pose>
         </model>
@@ -643,9 +643,9 @@
             </include>
             <pose>0.770804 -19.7749 0 0 0 -1.56798</pose>
         </model>
-        <model name="OpScrubs_5">
+        <model name="Scrubs_5">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>-2.66275 -18.9847 0 0 -0 1.57704</pose>
         </model>
@@ -919,9 +919,9 @@
             </include>
             <pose>-5.98588 6.41261 0 0 -0 1.58808</pose>
         </model>
-        <model name="OpScrubs_6">
+        <model name="Scrubs_6">
             <include>
-                <uri>model://OpScrubs</uri>
+                <uri>model://Scrubs</uri>
             </include>
             <pose>-0.947112 -20.3884 0 0 -0 0</pose>
         </model>
