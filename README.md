@@ -3,6 +3,12 @@
 **Visit the [AWS RoboMaker website](https://aws.amazon.com/robomaker/) to learn more about building intelligent robotic applications with Amazon Web Services.**
 
 ![Model: Hospital World](docs/images/hospital_world.jpg)
+## Supported versions of Gazebo & ROS
+Software | Version
+-------- | ------- 
+Gazebo | 9.16.0+ 
+ROS    | Melodic 
+
 
 ## 3D Models included in this Gazebo World
 
