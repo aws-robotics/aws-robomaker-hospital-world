@@ -6,8 +6,12 @@
 ## Supported versions of Gazebo & ROS
 Software | Version
 -------- | ------- 
-Gazebo | 9.16.0+ 
-ROS    | Melodic 
+Gazebo | 9.16.0+
+ROS    | Melodic
+-------- | ------- 
+Gazebo | 7.14.0+
+ROS    | Kinetic
+
 
 
 ## 3D Models included in this Gazebo World
