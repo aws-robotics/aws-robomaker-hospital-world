@@ -6,7 +6,7 @@
 ### Supported versions of Gazebo
 7.14.0+ | 9.16.0+
 
-Note: Python3 is required to run this world.
+Note: `python3` and `python3-pip` is required to run this world.
 
 ## 3D Models included in this Gazebo World
 
