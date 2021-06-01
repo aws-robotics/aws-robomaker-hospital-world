@@ -1,5 +1,5 @@
 #!/bin/bash
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 python3 fuel_utility.py download \
 -m XRayMachine -m IVStand -m BloodPressureMonitor -m BPCart -m BMWCart \
 -m CGMClassic -m StorageRack -m Chair \

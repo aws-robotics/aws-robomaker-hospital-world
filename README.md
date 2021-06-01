@@ -4,9 +4,9 @@
 
 ![Model: Hospital World](docs/images/hospital_world.jpg)
 ### Supported versions of Gazebo
-7.14.0+ | 9.16.0+ 
+7.14.0+ | 9.16.0+
 
-
+Note: `python3` and `python3-pip` is required to run this world.
 
 ## 3D Models included in this Gazebo World
 
@@ -23,6 +23,7 @@
 We also reference the following models from https://app.ignitionrobotics.org/fuel/models:
 
 *XRayMachine, IVStand, BloodPressureMonitor, BPCart, BMWCart, CGMClassic, StorageRack, Chair, InstrumentCart1, Scrubs, PatientWheelChair, WhiteChipChair, TrolleyBed, SurgicalTrolley, PotatoChipChair, VisitorKidSit, FemaleVisitorSit, AdjTable, MopCart3, MaleVisitorSit, Drawer, OfficeChairBlack, ElderLadyPatient, ElderMalePatient, InstrumentCart2, MetalCabinet, BedTable, BedsideTable, AnesthesiaMachine, TrolleyBedPatient, Shower, SurgicalTrolleyMed, StorageRackCovered, KitchenSink, Toilet, VendingMachine, ParkingTrolleyMin, PatientFSit, MaleVisitorOnPhone, FemaleVisitor, MalePatientBed, StorageRackCoverOpen, ParkingTrolleyMax*
+
 
 # Include the world from another package
 
