@@ -28,19 +28,30 @@ We also reference the following models from https://app.ignitionrobotics.org/fue
 # Include the world from another package
 
 * Update .rosinstall to clone this repository and run `rosws update`
+
 ```
-- git: {local-name: src/aws-robomaker-hospital-world, uri: 'https://github.com/aws-robotics/aws-robomaker-hospital-world.git', version: master}
+- git: {local-name: src/aws-robomaker-hospital-world, uri: 'https://github.com/aws-robotics/aws-robomaker-hospital-world.git', version: ros2}
 ```
 * Add the following to your launch file:
-```xml
-<launch>
-  <!-- Launch World -->
-  <include file="$(find aws_robomaker_hospital_world)/launch/hospital.launch"/>
-  ...
-</launch>
+* Add the following include to the ROS2 launch file you are using:
+```python
+    import os
+    from ament_index_python.packages import get_package_share_directory
+    from launch import LaunchDescription
+    from launch.actions import IncludeLaunchDescription
+    from launch.launch_description_sources import PythonLaunchDescriptionSource
+    def generate_launch_description():
+        hospital_pkg_dir = get_package_share_directory('aws_robomaker_hospital_world')
+        hospital_launch_path = os.path.join(warehouse_pkg_dir, 'launch')
+        hospital_world_cmd = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([hospital_launch_path, '/hospital.launch.py'])
+        )
+        ld = LaunchDescription()
+        ld.add_action(hospital_world_cmd)
+        return ld
 ```
 
-# Load directly into Gazebo (without ROS)
+# Load directly into Gazebo (without ROS2)
 ```bash
 chmod +x setup.sh
 ./setup.sh
@@ -48,15 +59,15 @@ export GAZEBO_MODEL_PATH=`pwd`/models:`pwd`/fuel_models
 gazebo worlds/hospital.world
 ```
 
-# ROS Launch with Gazebo viewer (without a robot)
+# ROS2 Launch with Gazebo viewer (without a robot)
 ```bash
-# build for ROS
+# build for ROS2
 rosdep install --from-paths . --ignore-src -r -y
 colcon build
 
-# run in ROS
+# run in ROS2
 source install/setup.sh
-roslaunch aws_robomaker_hospital_world view_hospital.launch
+ros2 launch aws_robomaker_hospital_world view_hospital.launch.py
 ```
 
 # Building
