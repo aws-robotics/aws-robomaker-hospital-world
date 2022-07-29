@@ -17,7 +17,7 @@ exec_program("python3 ${CMAKE_CURRENT_SOURCE_DIR}/fuel_utility.py download -m XR
 # Install
 ################################################################################
 
-install(DIRECTORY launch models fuel_models worlds photos
+install(DIRECTORY launch models worlds photos
 	DESTINATION share/${PROJECT_NAME}
 )
 
