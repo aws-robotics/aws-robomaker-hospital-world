@@ -82,3 +82,10 @@ $ chmod +x setup.sh
 $ ./setup.sh
 $ colcon build
 ```
+
+# Notes
+It is possible that the Gazebo model path does not work properly, try the next command before running:
+
+```bash
+$ source /usr/share/gazebo/setup.bash
+```
