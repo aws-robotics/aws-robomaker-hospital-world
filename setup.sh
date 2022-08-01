@@ -14,4 +14,4 @@ python3 fuel_utility.py download \
 -m Toilet -m VendingMachine -m ParkingTrolleyMin -m PatientFSit \
 -m MaleVisitorOnPhone -m FemaleVisitor -m MalePatientBed \
 -m StorageRackCoverOpen -m ParkingTrolleyMax \
--d fuel_models --verbose
+-d models --verbose

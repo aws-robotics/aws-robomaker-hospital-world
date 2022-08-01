@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <sdf version="1.6">
   <world name="world">
+    <gui>
+      <camera name='gzclient_camera'>
+        <pose>-4.70385 10.895 16.2659 -0 0.921795 -1.12701</pose>
+      </camera>
+    </gui>
     <gravity>0 0 -9.8</gravity>
     <physics default="0" name="default_physics" type="ode">
       <max_step_size>0.001</max_step_size>
