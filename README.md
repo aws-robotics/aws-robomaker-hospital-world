@@ -52,7 +52,7 @@ gazebo worlds/hospital.world
 ```bash
 # build for ROS
 rosdep install --from-paths . --ignore-src -r -y
-colcon build
+catkin_make
 
 # run in ROS
 source install/setup.sh
